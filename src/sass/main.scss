@@ -1,6 +1,7 @@
 @import "libs/normalize";
-
+@import "libs/revertNormalize";
+@import "libs/timeline";
 @import "modules/variables";
 @import "modules/breakpoints";
-
-@import"partials/header";
+@import "partials/menu/menu";
+@import "partials/about-me/aboutMe";
