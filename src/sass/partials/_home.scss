@@ -1,0 +1,39 @@
+.home {
+  position: relative;
+  display: flex;
+  height: auto;
+  width: 100%;
+  min-height: 720px;
+  background: url('https://source.unsplash.com/random') 50% 0 no-repeat fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  ::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 720px;
+    z-index: -1;
+    opacity: .2;
+    background: $blue;
+  }
+  @include desktop {
+
+  }
+  &__wrapper {
+    font-size: 1rem;
+    color: white;
+  }
+  &__title {
+
+  }
+
+  &__subtitle {
+
+  }
+}

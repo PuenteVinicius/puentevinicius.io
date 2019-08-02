@@ -1,5 +1,5 @@
 import '../index'
-import '../sass/main'
+import '../sass/_main'
 import _ from 'lodash';
 
 if (process.env.NODE_ENV !== 'production') {
