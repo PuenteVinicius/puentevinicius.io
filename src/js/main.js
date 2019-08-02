@@ -1,4 +1,4 @@
-import '../../index'
+import '../index'
 import '../sass/main'
 import _ from 'lodash';
 

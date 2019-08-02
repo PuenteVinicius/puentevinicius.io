@@ -18,7 +18,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'Webpack 4 Starter',
-      template: './index.html',
+      template: './src/index.html',
       inject: true,
       minify: {
         removeComments: true,
@@ -39,7 +39,7 @@ module.exports = {
       {
         test: /\.html$/,
         use: 'raw-loader',
-        include: [path.resolve(__dirname, 'index.html')],
+        include: [path.resolve(__dirname, './src/index.html')],
       }
     ],
   },
