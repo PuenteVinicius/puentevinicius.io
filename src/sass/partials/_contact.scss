@@ -1,0 +1,16 @@
+.contact {
+  height: auto;
+  width: 100%;
+  display: block;
+  background: white;
+  color:$black;
+  text-align: center;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100vh;
+    width: 100%;	
+  }
+}

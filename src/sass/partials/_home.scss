@@ -10,6 +10,19 @@
   top: 0;
   left: 0;
   z-index: 1;
+  pointer-events: none;
+  @include desktop {
+    width: 100%;
+    min-height: unset;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/random');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
   ::before {
     content: '';
     display: block;
@@ -20,20 +33,44 @@
     min-height: 720px;
     z-index: -1;
     opacity: .2;
-    background: $blue;
+    background: $black;
+    @include desktop {
+      width: 100%;
+      min-height: 100vh;
+    }
   }
-  @include desktop {
 
-  }
   &__wrapper {
-    font-size: 1rem;
+    display: block;
     color: white;
+    text-align: center;
   }
   &__title {
-
+    font-size: 2.5rem;
+    @include desktop {
+      font-size: 4rem;
+    }
   }
 
   &__subtitle {
-
+    font-size: 2rem;
+    @include desktop {
+      font-size: 3.5rem;
+    }
+  }
+  &__button {
+    background: transparent;
+    border: solid 1px white;
+    color: white;
+    width: 60%;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5em;
+    cursor: pointer;
+    @include desktop {
+      height: 80px;
+      font-size: 2.7rem;
+    }
   }
 }

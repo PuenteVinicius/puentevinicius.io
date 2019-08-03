@@ -2,58 +2,80 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> <%= htmlWebpackPlugin.options.title %> </title>
-	<meta name="viewport" content="width=device-width,initial- scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> <%= htmlWebpackPlugin.options.title %> </title>
+  <meta name="viewport" content="width=device-width,initial- scale=1">
 </head>
 
 <body>
-	<header role="banner" class="banner">
-		<div class="banner__wrapper">
-			<ul class="banner__options">
-				<li class="banner-item">Home</li>
-				<li class="banner-item">Skills</li>
-				<li class="banner-item">Work experience</li>
-				<li class="banner-item">Contact</li>
-			</ul>
-			<ul class="banner__menu">
-				<span>menu</span>
-				<!-- <li class="banner-item">Home</li>
-				<li class="banner-item">Skills</li>
-				<li class="banner-item">Work experience</li>
-				<li class="banner-item">Contact</li> -->
-			</ul>
-		</div>
-	</header>
-	<main>
-		<section id="home" class="home">
-			<div class="home__wrapper">
-				<h1 class="home__title"> Vinicius Puente</h1>
-				<h2 class="home__sub-title"> a little about my works</h2>
-			</div>
+  <header role="banner" class="banner">
+    <div class="banner__wrapper">
+      <ul class="banner__options">
+        <li class="banner-item">Home</li>
+        <li class="banner-item">Skills</li>
+        <li class="banner-item">Work experience</li>
+        <li class="banner-item">Contact</li>
+      </ul>
+      <ul class="banner__menu">
+        <span>menu</span>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="home">
+      <div class="home__wrapper">
+        <h1 class="home__title">Vinicius Puente</h1>
+        <h2 class="home__subtitle">A little about my works</h2>
+        <button class="home__button">read more!</button>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <h3 class="skills__title">Skills</h3>
+      <p>
+        This are some of my skills
+      </p>
+      <div class="skills__content-wrapper-top">
+        <div class="skills__codding">
+          <h4 class="skills__sub-title">Codding</h4>
+          <p>
+            HTML, CSS, SASS, Javascript, Typescript.
+          </p>
+        </div>
+        <div class="skills__tools">
+          <h4 class="skills__sub-title">Tools</h4>
+          <p>
+            Node.js, Git, Gulp, Angular.js, Angular, Vue.js, Ionic,
+            MongoDB, Bootstrap, GSAP.
+          </p>
+        </div>
+      </div>
+      <div class="skills__content-wrapper-bottom">
+        <div class="skills__testing">
+          <h4 class="skills__sub-title">Testing</h4>
+          <p> 
+            Karma, Jasmine, Appium, Jest.
+          </p>
+        </div>
+        <div class="skills__others">
+          <h4 class="skills__sub-title">Others</h4>
+          <p>
+            Scrum, Gitflow, Animações, TDD, BDD, Mobile First
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="work-experience" class="work-experience">
+        <h3 class="skills__title">Work Experience</h3>
+    </section>
+    <section id="contact" class="contact">
+      <h3 class="skills__title">Contact</h3>
 		</section>
-		<section id="skills">
-			<div>
-				<h1>Vinicius Puente</h1>
-				<h2>a little about my works</h2>
-			</div>
-		</section>
-		<section id="work-experience">
-			<div>
-				<h1>Vinicius Puente</h1>
-				<h2>a little about my works</h2>
-			</div>
-		</section>
-		<section id="contact">
-			<div>
-				<h1>Vinicius Puente</h1>
-				<h2>a little about my works</h2>
-			</div>
-		</section>
-	</main>
-	<footer id="footer">
-		Developed by Vinicius Puente
-	</footer>
+  </main>
+  <footer id="footer" class="footer">
+    Developed by Vinicius Puente
+  </footer>
 </body>
+
 </html>

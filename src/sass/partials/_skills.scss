@@ -1,0 +1,58 @@
+.skills {
+  height: auto;
+	width: 100%;
+	display: block;
+	text-align: center;
+	@include desktop {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		height: 100vh;
+		width: 100%;	
+	}
+	&__title {
+		margin-top: 25px;
+		font-size: 2rem;
+		@include desktop {
+			font-size: 2.5rem;
+			margin-top: 0;
+    }
+	}
+	&__sub-title {
+		font-size: 1.5rem;
+		@include desktop {
+			font-size: 2rem;
+    }
+	}
+	&__content-wrapper-top,
+	&__content-wrapper-bottom {
+		height: auto;
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		font-size: 1.5rem;
+		@include desktop {
+			font-size: 2rem;
+    }
+	}
+	&__codding, 
+	&__tools,
+	&__testing, 
+	&__others {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		width: 50%;
+		height: 250px;
+		font-size: 1.2rem;
+		@include desktop {
+			font-size: 1.2rem;
+		}
+		p {
+			width: 80%;
+			margin-top: 1em;
+		}
+	}
+}

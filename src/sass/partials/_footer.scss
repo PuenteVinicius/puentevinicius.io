@@ -1,0 +1,16 @@
+.footer {
+    height: auto;
+    width: 100%;
+    display: block;
+    background: $black;
+    color:white;
+    text-align: center;
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      height: 10vh;
+      width: 100%;	
+    }
+  }
